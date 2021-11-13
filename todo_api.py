@@ -54,7 +54,7 @@ resource_fields = {
 
 class Index(Resource):
 	def get(self):
-		return "message": "Go to /todos to see all todo items"
+		return {"message": "Go to /todos to see all todo items"}
 
 #Class to create, get, delete and update tasks
 #@marshal_with decorater is used with the resource_fields dictionary
